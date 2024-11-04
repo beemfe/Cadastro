@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Competição de natação</string>
+    <string name="inicio">Selecione sua categoria nos 3 pontos no canto superior direito.</string>
+    <string name="juvenil">Juvenil</string>
+    <string name="senior">Sênior</string>
+    <string name="outros">Outros</string>
+    <string name="nome">Nome</string>
+    <string name="dataNasc">Data de nascimento</string>
+    <string name="bairro">Bairro</string>
+    <string name="anosEsporte">Anos no esporte</string>"
+    <string name="cardio">Possui problema cardíaco?</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="academia">Qual academia você frequenta?</string>
+    <string name="recorde">Qual o seu tempo recorde em segundos?</string>
+    <string name="cadastrar">Cadastrar</string>">
+    <string name="escolha">Escolha uma categoria</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>">
+</resources>

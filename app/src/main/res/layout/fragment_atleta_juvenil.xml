@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ajLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtletaJuvenilFragment">
+
+    <EditText
+        android:id="@+id/etNomeJ"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etDataNascJ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDataNascJ"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="@string/dataNasc"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etBairroJ"
+        app:layout_constraintStart_toStartOf="@+id/etNomeJ"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeJ" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:text="@string/cadastrar"
+        app:layout_constraintBottom_toTopOf="@+id/tvListaJ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAnosEsporte" />
+
+    <EditText
+        android:id="@+id/etAnosEsporte"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="@string/anosEsporte"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrar"
+        app:layout_constraintStart_toStartOf="@+id/etBairroJ"
+        app:layout_constraintTop_toBottomOf="@+id/etBairroJ" />
+
+    <EditText
+        android:id="@+id/etBairroJ"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="@string/bairro"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etAnosEsporte"
+        app:layout_constraintStart_toStartOf="@+id/etDataNascJ"
+        app:layout_constraintTop_toBottomOf="@+id/etDataNascJ" />
+
+    <TextView
+        android:id="@+id/tvListaJ"
+        android:layout_width="369dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

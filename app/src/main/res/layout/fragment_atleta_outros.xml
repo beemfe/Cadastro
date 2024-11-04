@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aoLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtletaOutrosFragment">
+
+    <EditText
+        android:id="@+id/etTempoRecorde"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:hint="@string/recorde"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAcademia" />
+
+    <EditText
+        android:id="@+id/etNomeO"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etDataNascO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etAcademia"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/academia"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etTempoRecorde"
+        app:layout_constraintStart_toStartOf="@+id/etTempoRecorde"
+        app:layout_constraintTop_toBottomOf="@+id/etBairroO" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:text="@string/cadastrar"
+        app:layout_constraintBottom_toTopOf="@+id/tvListaO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTempoRecorde" />
+
+    <EditText
+        android:id="@+id/etDataNascO"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="@string/dataNasc"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/etBairroO"
+        app:layout_constraintStart_toStartOf="@+id/etNomeO"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeO" />
+
+    <EditText
+        android:id="@+id/etBairroO"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="@string/bairro"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toTopOf="@+id/etAcademia"
+        app:layout_constraintStart_toStartOf="@+id/etAcademia"
+        app:layout_constraintTop_toBottomOf="@+id/etDataNascO" />
+
+    <TextView
+        android:id="@+id/tvListaO"
+        android:layout_width="383dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
